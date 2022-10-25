@@ -12,7 +12,7 @@
 
             <p>Перенесите свои файлы сюда или нажмите чтобы выбрать их!</p>
             <span v-if="uploadedFiles.length">
-                Выбрыно файлов: {{ uploadedFiles.length }}</span
+                Выбрано файлов: {{ uploadedFiles.length }}</span
             >
 
             <input multiple @change="handleSelect" type="file" />
@@ -119,7 +119,6 @@ const submit = (): void => {
         position: relative;
         transition: all 0.2s ease-in-out;
         text-align: center;
-        margin-bottom: 7px;
         img {
             margin-bottom: 8px;
             transition: all 0.2s ease-in-out;
@@ -155,6 +154,7 @@ const submit = (): void => {
         padding: 5px;
         max-height: 100px;
         overflow-y: scroll;
+        margin-top: 7px;
         li {
             border-bottom: 1px solid $main-text-color;
             padding: 5px 0px;
