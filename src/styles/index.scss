@@ -1,0 +1,29 @@
+@import './_reset.scss';
+@import './_vars.scss';
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    background: #9e7186;
+    background: -webkit-linear-gradient(top left, #9e7186, #e47148);
+    background: -moz-linear-gradient(top left, #9e7186, #e47148);
+    background: linear-gradient(to bottom right, #9e7186, #e47148);
+    color: $main-text-color;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 5px 15px;
+    margin: 0 auto;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: all 0.3s ease-in-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+    transform: translateX(-10%);
+}
